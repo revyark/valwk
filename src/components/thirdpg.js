@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 
+const fullText = `Thank you so much for being in my life,shubho! I like how I can be a big crybaby around you and test your patience from time to time. HEHEHHRHEHHEHEHEUWEWROOEIIHEIHEF. Thank you so much for handling the mess of a person I am. You make everything right,even if practically things are going wrong. I am so so so grateful to have you. You are the exact prince charming of my dreams in my childhood. I can't imagine a life without you in it. And I can't imagine someone more caring,handsome,smarter,wilder,funnier than you in my wildest of dreams. I think it should be clear by now, that I love you soooo much. Please be my valentine.`;
 export default function ThirdPg() {
   const [photoPosition, setPhotoPosition] = useState('center');
   const [displayedText, setDisplayedText] = useState('');
   const [showText, setShowText] = useState(false);
 
-  const fullText = `Thank you so much for being in my life,shubho! I like how I can be a big crybaby around you and test your patience from time to time. HEHEHHRHEHHEHEHEUWEWROOEIIHEIHEF. Thank you so much for handling the mess of a person I am. You make everything right,even if practically things are going wrong. I am so so so grateful to have you. You are the exact prince charming of my dreams in my childhood. I can't imagine a life without you in it. And I can't imagine someone more caring,handsome,smarter,wilder,funnier than you in my wildest of dreams. I think it should be clear by now, that I love you soooo much. Please be my valentine.`;
+  
 
   useEffect(() => {
     const timer = setTimeout(() => {

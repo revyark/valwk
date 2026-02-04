@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './SecondPg.css';
 
+const itemTypes = ['heart', 'rose', 'cupid'];
 export default function SecondPg() {
   const navigate = useNavigate();
   const [items, setItems] = useState([]);
@@ -14,7 +15,7 @@ export default function SecondPg() {
   const gameRef = useRef(null);
   const itemIdRef = useRef(0);
 
-  const itemTypes = ['heart', 'rose', 'cupid'];
+  
   const emojis = {
     heart: '❤️',
     rose: '🌹',
@@ -40,7 +41,7 @@ export default function SecondPg() {
     }, 500);
 
     return () => clearInterval(interval);
-  }, [gameOver, win, itemTypes]);
+  }, [gameOver, win]);
 
   // Move items down
   useEffect(() => {
