@@ -62,7 +62,7 @@ export default function ThirdPg() {
       >
         <img
           src="/images/center_photo.png"
-          alt="Valentine's Photo"
+          alt="Valentine's"
           style={{
             width: '300px',
             height: 'auto',

@@ -40,7 +40,7 @@ export default function SecondPg() {
     }, 500);
 
     return () => clearInterval(interval);
-  }, [gameOver, win]);
+  }, [gameOver, win, itemTypes]);
 
   // Move items down
   useEffect(() => {
